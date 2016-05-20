@@ -251,7 +251,7 @@
 						<executions>
 							<execution>
 								<goals>
-									<goal>cpd-check</goal>
+									<goal>check</goal>
 									<goal>pmd</goal>
 								</goals>
 							</execution>

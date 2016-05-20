@@ -24,10 +24,10 @@ public class Resources {
    @SuppressWarnings("unused")
    @Produces
    @PersistenceContext
-   private EntityManager em;
+   private EntityManager eManager;
    
    @Produces
-   public Logger produceLog(InjectionPoint injectionPoint) {
+   public Logger produceLog(final InjectionPoint injectionPoint) {
       return Logger.getLogger(injectionPoint.getMember().getDeclaringClass().getName());
    }
 }

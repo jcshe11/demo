@@ -7,7 +7,7 @@
 
     <persistence-unit name="wineDB">
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
-        <jta-data-source>java:/WineDS</jta-data-source>
+        <jta-data-source>java:/MySQLWineDS</jta-data-source>
         <properties>
             <property name="hibernate.archive.autodetection" value="class" />
             <property name="hibernate.format_sql" value="true" />

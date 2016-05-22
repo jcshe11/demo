@@ -23,6 +23,7 @@ public class WineDAO {
         return query.getResultList();
     }
 	
+	
 	public List<Wine> getWinesByName(final String name) {
     	final Query query=eManager.createQuery("SELECT w FROM Wine AS w "+
     								"WHERE w.name LIKE ?1");

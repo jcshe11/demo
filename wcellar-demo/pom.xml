@@ -194,7 +194,11 @@
 				<groupId>org.jboss.as.plugins</groupId>
 				<artifactId>jboss-as-maven-plugin</artifactId>
 				<version>7.7.Final</version>
-				<executions>
+				<configuration>
+                    			<username>USERNAME</username>
+                    			<password>PASSWORD</password>
+                		</configuration>
+                		<executions>
 					<execution>
 						<phase>install</phase>
 						<goals>
